@@ -36,7 +36,7 @@ workspace "Basics of DirectX 12"
       files { "src/win32_window_main.cpp" }
       files { "libs/tinyobjloader/tiny_obj_loader.h"}
       postbuildcommands {
-         "{COPY} shaders/shaders.hlsl %{cfg.buildtarget.directory}",
-         "{COPY} models/CornellBox-Original.obj %{cfg.buildtarget.directory}",
-         "{COPY} models/CornellBox-Original.mtl %{cfg.buildtarget.directory}"
+         "{COPY} shaders/shaders.hlsl \"%{cfg.buildtarget.directory}\"",
+         "{COPY} models/CornellBox-Original.obj \"%{cfg.buildtarget.directory}\"",
+         "{COPY} models/CornellBox-Original.mtl \"%{cfg.buildtarget.directory}\""
        }
